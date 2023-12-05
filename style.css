@@ -1,0 +1,237 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.conhecamais video{
+    position: absolute;
+    background-size: cover;
+    z-index: -100;
+    opacity: 0.9;
+    width: 100vw;
+}
+
+body{
+    background-color: #1b1883;
+}
+
+.cabecalho{
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px ;
+    font-family: 'bangers';
+    background-color: #1b1883;
+    font-size: 20px;
+    opacity: 0.95;
+    z-index: 5;
+}
+
+.logo{
+    max-width: 100px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu{
+    display: flex;
+    gap: 30px;
+    padding-right: 50px;
+}
+
+.menu a:hover{
+    opacity: 0.8;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.conhecamais{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacoes{
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    color: #1b1883;
+}
+
+.informacoes h1{
+    font-size: 36px;
+    font-family: 'bangers';
+}
+
+.informacoes p{
+    font-family: 'Rubik Bubbles';
+    font-size: 48px;
+}
+
+.informacoes button{
+    font-family: 'bangers';
+    background-color: #1b1883;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out 0.4s;
+}
+
+.informacoes::after{
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    top: 45px;
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient( rgba(0,0,0,0) 40%, #000 100%);
+}
+
+.informacoes button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 7px red;
+}
+
+.categorias{
+	color: white;
+    width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    padding: 30px 0;
+    z-index: -1;
+}
+
+.categorias_titulo{
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 40px;
+    font-family: 'bangers';
+}
+
+.caixa_maior{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 900px;
+}
+.caixa_interna{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+	border: 1px solid white;
+	padding: 50px;
+}
+
+.titulo_interno{
+	font-size: 30px;
+    font-family: 'bangers';
+}
+
+.texto_interno{
+	text-align: center;
+	line-height: 1.5;
+	font-size: 12px;
+    font-family: 'Recursive';
+}
+.botao_interno{
+	background-color: transparent;
+	border: 1px solid white;
+	padding: 10px 20px;
+	font-size: 17px;
+	color: white;
+	border-radius: 8px;
+    font-family: 'bangers';
+    cursor: pointer;
+}
+
+
+.sobre{
+	height: 80vh;
+	background-image: url(https://images5.alphacoders.com/532/532651.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    opacity: 0.95;
+    padding: 100px;
+}
+
+.sobre_titulo{
+    background-color: rgba(255,255,255, 0.93);
+	max-width: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap:  25px;
+	padding: 25px;
+	border-radius: 20px;
+}
+
+.sobre_titulo h1{
+    font-size: 40px;
+    font-family: 'bangers';
+    font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.sobre p{
+    text-align: center;
+	line-height: 1.6;
+	font-size: 18px;
+    font-family: 'Recursive';
+}
+
+.rodape{
+	margin-top: 80px;
+    background-color: #1c1883;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-top: 1px solid white;
+	padding-top: 20px;
+}
+.rodape_titulo{
+	font-size: 20px;
+    font-family: 'bangers';
+}
+
+.rodape_texto{
+	color: rgb(175, 175,175);
+    margin-top: 8px;
+	font-size: 16px;
+    font-family: 'bangers';
+}
+
+.rodape_dev{
+	font-size: 14px;
+    font-family: 'bangers';
+	align-self: flex-end;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
